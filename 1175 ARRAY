@@ -1,0 +1,23 @@
+import java.io.IOException; 
+import java.util.Scanner; 
+ 
+ 
+ public class Main { 
+ 
+ 
+     public static void main(String[] args) { 
+     	Scanner input = new Scanner(System.in);
+      int N[20], temp,i,j; 
+5     for(i=0; i<20; i++) 
+6         N[i] = input.nextInt();; 
+7     for(i=0, j=19; i<10; i++, j--) 
+8     { 
+9         temp=N[i]; 
+10         N[i]=N[j]; 
+11         N[j]=temp; 
+12     } 
+13     for(i=0; i<20; i++) 
+14         System.out.println("N+i+N[i]); 
+15     return 0; 
+16 } 
+
