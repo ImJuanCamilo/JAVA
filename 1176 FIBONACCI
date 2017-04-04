@@ -1,0 +1,33 @@
+    import java.io.IOException; 
+    import java.util.Scanner; 
+
+    public class Main { 
+ 
+ 
+     public static void main(String[] args) { 
+
+    
+    
+    
+    long long int n, primero = 0, segundo = 1, siguiente, c; 
+    int i,j; 
+    d = input.nextInt();;
+    j = input.nextInt();
+    for(i=1; i<=j; i++, primero = 0, segundo = 1) 
+    { 
+        n = input.nextInt(); 
+        n=n+1; 
+        for ( c = 0 ; c < n ; c++ ) 
+        { 
+           if (c <= 1) siguiente = c; 
+           else 
+           { 
+              siguiente = primero + segundo; 
+              primero = segundo; 
+              segundo = siguiente; 
+           } 
+        } 
+           System.out.println(siguiente); 
+    } 
+    return 0; 
+ } 
