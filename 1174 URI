@@ -1,0 +1,21 @@
+ import java.io.IOException; 
+ import java.util.Scanner; 
+ 
+ 
+ public class Main { 
+ 
+ 
+     public static void main(String[] args) { 
+     	Scanner input = new Scanner(System.in);
+      double A[100]; 
+      int i; 
+      for(i=0; i<=99; i++) 
+         A[i] = input.nextInt(); 
+     for(i=0; i<=99; i++) 
+     { 
+         if(A[i]<=10.0) 
+             System.out.println(i, A[i]); 
+     } 
+     return 0; 
+ } 
+
