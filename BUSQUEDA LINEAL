@@ -1,0 +1,14 @@
+public class Busqueda_lineal {
+public static void main (String YYSP[]) throws IOException
+{
+int Array[]={1, 2, 3, 4 , 5};
+BufferedReader entrada=new BufferedReader (new InputStreamReader (System.in));
+
+System.out.print("Que numero desea buscar: ");
+int num=Integer.parseInt(entrada.readLine());
+
+for (int i=0; i<Array.length; i++)
+if (num==Array[i])
+System.out.println("El numero esta en el arreglo y se encuentra en la posicion " +i); 
+}
+}
